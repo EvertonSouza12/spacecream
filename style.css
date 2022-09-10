@@ -42,6 +42,7 @@ main p {
   font-weight: 400;
   margin-bottom: 6.3rem;
   color: hsla(274, 84%, 12%, 1);
+  text-align: center;
 }
 
 .card{
@@ -50,6 +51,7 @@ main p {
 
 .card img{
   width: 32rem;
+  animation: card 700ms;
 }
 
 .card h2 {
@@ -60,15 +62,18 @@ main p {
 }
 
 .card h2 span {
-  font-weight: 400;
-  width: 11.2rem;
-  background: #FEEAFA;
   font-family: var(--ff-header);
-  font-size: 2rem;
-  letter-spacing: 0.05em;
+  padding: 0 2.3rem;
   border-radius: 2rem;
-  color: hsla(232, 17%, 35%, 1);
-  text-align: center;
+  height: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  background-color: #FFFFFF;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  color: #4A4E69;
 }
 
 @keyframes card{

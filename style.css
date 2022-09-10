@@ -103,7 +103,7 @@ main{
   }
 }
 
-@media(min-width:900px){
+@media(min-width:700px){
   .page{
     display: flex;
     gap: 9.8rem;
@@ -178,9 +178,7 @@ main{
     font-weight: 400;
     font-size: 14px;
     line-height: 28px;
-
-
-    text-align: center;
+    margin-top: 5rem;
 
     color: #4A4E69;
   }

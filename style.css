@@ -182,7 +182,7 @@ main{
 
     color: #4A4E69;
   }
-  img:hover{
+  .card img:hover{
     transform: scale(1.1);
     filter: brightness(0.5);
   }

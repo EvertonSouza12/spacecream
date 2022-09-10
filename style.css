@@ -13,6 +13,13 @@
   margin: 0 auto;
 }
 
+
+/* #card1,
+#card2{
+  display: none;
+} */
+
+
 header{
   background: hsla(218, 17%, 62%, 1);
   font-family: var(--ff-header);
@@ -21,13 +28,16 @@ header{
   font-weight: 400;
   color: #FFFFFF;
   min-height: 25rem;
-  margin-bottom: 1.4rem;
+  padding-bottom: 2.9rem;
   text-align: center;
 }
-
+header img {
+  padding: 3.2rem 0 3.2rem;
+}
 header h1 {
   z-index: -1;
   background: #CBC0D3;
+  
 }
 
 main{
@@ -36,7 +46,7 @@ main{
   gap: 1.6rem;
 }
 
-main p {
+ p {
   font-family: var(--ff-secondary);
   font-size: 2rem;
   font-weight: 400;
@@ -95,5 +105,78 @@ main p {
   100%{
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media(min-width:900px){
+  .page{
+    display: flex;
+    gap: 9.8rem;
+  }
+
+  .head{
+    background-color: hsla(218, 17%, 62%);
+    max-width: 37.7rem;
+  }
+
+  .head h1{
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    line-height: 3.4rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .card h2 {
+    display: none;
+  }
+
+  .head p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 4.8rem 0;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  
+  .images{
+    margin-top: 6.4rem;
+    display: grid;
+    grid-template-areas:
+    "A B C"
+    "D B F"
+    "D E F";
+    gap: 3.2rem;
+  }
+  main div:nth-child(1){
+    grid-area: A;
+  }
+  main div:nth-child(2){
+    grid-area: B;
+  }
+
+  main div:nth-child(3){
+    grid-area: C;
+  }
+  main div:nth-child(4){
+    grid-area: E;
+  }
+
+  main div:nth-child(6){
+    grid-area: D;
+  }
+
+  main div:nth-child(5){
+    grid-area: F;
+  }
+  .card > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }

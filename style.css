@@ -9,6 +9,9 @@
   --ff-header: 'Staatliches', sans-serif;
   --ff-secondary: 'Palanquin', sans-serif;
 }
+.page{
+  margin: 0 auto;
+}
 
 header{
   background: hsla(218, 17%, 62%, 1);
@@ -27,6 +30,12 @@ header h1 {
   background: #CBC0D3;
 }
 
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
 main p {
   font-family: var(--ff-secondary);
   font-size: 2rem;
@@ -35,18 +44,23 @@ main p {
   color: hsla(274, 84%, 12%, 1);
 }
 
+.card{
+  position: relative;
+}
+
 .card img{
   width: 32rem;
 }
 
 .card h2 {
   position: absolute;
-  display: flex;
-  margin: 1.6rem;
-  width: fit-content;
+  top: 1.7rem;
+  left: 20rem;
+  animation: spanbotton 700ms;
 }
 
 .card h2 span {
+  font-weight: 400;
   width: 11.2rem;
   background: #FEEAFA;
   font-family: var(--ff-header);
@@ -55,4 +69,26 @@ main p {
   border-radius: 2rem;
   color: hsla(232, 17%, 35%, 1);
   text-align: center;
+}
+
+@keyframes card{
+  0%{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spanbotton {
+  0%{
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

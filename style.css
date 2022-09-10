@@ -6,4 +6,27 @@
 
 :root{
   font-size: 62.5%;
+  --ff-header: 'Staatliches', sans-serif;
+  --ff-secondary: 'Palanquin', sans-serif;
+}
+
+header{
+  background: hsla(218, 17%, 62%, 1);
+  font-family: var(--ff-header);
+  letter-spacing: 0.05em;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  min-height: 25rem;
+  margin-bottom: 1.4rem;
+  text-align: center;
+}
+
+header h1 {
+  z-index: -1;
+  background: #CBC0D3;
+}
+
+main p {
+  
 }

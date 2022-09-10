@@ -28,5 +28,31 @@ header h1 {
 }
 
 main p {
-  
+  font-family: var(--ff-secondary);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 6.3rem;
+  color: hsla(274, 84%, 12%, 1);
+}
+
+.card img{
+  width: 32rem;
+}
+
+.card h2 {
+  position: absolute;
+  display: flex;
+  margin: 1.6rem;
+  width: fit-content;
+}
+
+.card h2 span {
+  width: 11.2rem;
+  background: #FEEAFA;
+  font-family: var(--ff-header);
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  border-radius: 2rem;
+  color: hsla(232, 17%, 35%, 1);
+  text-align: center;
 }

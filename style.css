@@ -33,7 +33,7 @@ header h1 {
   
 }
 
-main{
+.images{
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
@@ -80,6 +80,9 @@ main{
 }
 
 
+/* footer{
+  display: none;
+} */
 
 @keyframes card{
   0%{
@@ -125,7 +128,7 @@ main{
     line-height: 3rem;
   }
 
-  .card h2 {
+  h2 {
     display: none;
   }
 
